@@ -1,1 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  background-color: #e1d9f3;
+}
 
+@font-face {
+  font-family:'Nexa Extra Light';
+  font-family:'Nexa Heavy';
+  src: url('../fonts/Nexa-ExtraLight.ttf') format('truetype');
+  src: url('../fonts/Nexa-Heavy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.login-information__container{
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-top: 32px;
+  display: flex;
+  background-color: #FFFFFF;
+  padding-bottom: 32px;
+}
+
+.Earnings{
+  flex-basis: 604px;
+}
+
+.Earnings__left-side{
+  background-color: #6941C6;
+  color: white;
+  padding: 30px 59px 75px 24px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.Earnings__image{
+  width: 210px;
+  height: 70px;
+}
+
+.Earnings__found{
+  margin-top: 65px;
+  margin-left: 32px
+}
+
+.Earnings__info{
+  display: flex;
+  background-color: #FFFFFF;
+  box-shadow: 0px 3.77px 49.95px 0px #0000001A;
+  border-radius: 19px;
+  width: 480px;
+  height: 257px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 32px;
+  margin-top: -23px;
+}
+
+.Earnings__details{
+  margin-left: 42px;
+}
+
+.Earnings__earn{
+  color: #3A3A3A;
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 30px;
+  font-family:'Nexa Heavy';
+  margin: 0px;
+  margin-top: -20px;
+  padding-bottom: 7px;
+}
+
+.Earnings__total{
+  font-family:'Nexa Heavy';
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #8C8B8B;
+}
+
+.Earnings__price{
+  font-family:'Nexa Heavy';
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 30px;
+  color: #3A3A3A;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 28px;
+}
+
+.Earnings__profit{
+  font-family:'Nexa Heavy';
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #8C8B8B;
+  margin-top: -4px;
+}
+
+.Earnings__percentage{
+  display: flex;
+}
+
+.Earnings__graf{
+  margin-right: -36px;
+}
+
+.Earnings__number{
+  color: #3A3A3A;
+  position: absolute;
+  font-family:'Nexa Heavy';
+  font-size: 24.51px;
+  font-weight: 900;
+  line-height: 30px;
+  margin-left: 120px;
+  margin-top: 130px;
+}
+
+.Earnings__decription{
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 90px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0px;
+  margin-top: 85px;
+}
+
+.Earnings__text{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-left: 7px;
+  margin-top: 5px;
+  padding-bottom: 80px;
+}
+
+.Earnings__indicadores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.Earnings__dot {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 5px;
+}
