@@ -1,0 +1,21 @@
+:root {
+  /* Colors */
+  --color-white: #FFFFFF;
+  --color-purple: #6941C6;
+  --color-soft-gray: #8C8B8B;
+  --color-strong-gray: #3A3A3A;
+
+  /* sizes */
+  --twenty-pixel: 20px;
+  --sixteen-pixeles: 16px;
+  --eight-pixel: 8px;
+  --font-size-xlarge: 25px;
+  --font-size-smalls: 14px;
+  --font-size-smalln: 13px;
+  --font-size-small: 12px;
+  --font-weight-bold: 700;
+  --width: 100%;
+  --line-height-small: 21px;
+  --line-heightx-large: 30px;
+}
+
