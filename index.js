@@ -39,23 +39,3 @@ document.addEventListener('DOMContentLoaded', function () {
     slide.addEventListener('mouseleave', startAutoSlide);
   });
 });
-
-const signupButton = document.getElementById('signupButton');
-const emailInput = document.getElementById('emailInput');
-const passwordInput = document.getElementById('passwordInput');
-
-document.addEventListener('click', () => {
-  // Basic validation for email and password (you should add more robust validation)
-  if (emailInput.value.trim() === '' || !emailInput.value.includes('@') || passwordInput.value.trim() === '') {
-    alert('Please fill in all fields correctly.');
-    return;
-  }
-
-  // Here you would handle the actual signup process.
-  // For example:
-  // - Send an AJAX request to your backend to create the user account.
-  // - Redirect the user to a success page.
-  console.log('Sign up button clicked!');
-  console.log('Email:', emailInput.value);
-  console.log('Password:', passwordInput.value);
-});
