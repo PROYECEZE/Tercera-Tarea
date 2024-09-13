@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-  let slides = document.querySelectorAll('.js-Earnings-left-side');
-  let indicators = document.querySelectorAll('.js-indicator');
+  const slides = document.querySelectorAll('.js-Earnings-left-side');
+  const indicators = document.querySelectorAll('.js-indicator');
   let currentSlide = 0;
   const totalSlides = slides.length;
   let autoSlideInterval;
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function autoSlide() {
-    let nextSlide = (currentSlide + 1) % totalSlides;
+    const nextSlide = (currentSlide + 1) % totalSlides;
     goToSlide(nextSlide);
   }
 
@@ -38,4 +38,24 @@ document.addEventListener('DOMContentLoaded', function () {
     slide.addEventListener('mouseenter', stopAutoSlide); 
     slide.addEventListener('mouseleave', startAutoSlide);
   });
+});
+
+const signupButton = document.getElementById('signupButton');
+const emailInput = document.getElementById('emailInput');
+const passwordInput = document.getElementById('passwordInput');
+
+document.addEventListener('click', () => {
+  // Basic validation for email and password (you should add more robust validation)
+  if (emailInput.value.trim() === '' || !emailInput.value.includes('@') || passwordInput.value.trim() === '') {
+    alert('Please fill in all fields correctly.');
+    return;
+  }
+
+  // Here you would handle the actual signup process.
+  // For example:
+  // - Send an AJAX request to your backend to create the user account.
+  // - Redirect the user to a success page.
+  console.log('Sign up button clicked!');
+  console.log('Email:', emailInput.value);
+  console.log('Password:', passwordInput.value);
 });
