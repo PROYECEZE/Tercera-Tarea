@@ -39,3 +39,40 @@ document.addEventListener('DOMContentLoaded', function () {
     slide.addEventListener('mouseleave', startAutoSlide);
   });
 });
+
+document.querySelector('.js-Earnings-right-eye-toggle').addEventListener('click', function () {
+  const passwordInput = document.getElementById('js-Password');
+  const eyeOpen = document.querySelector('.js-eye-closed'); 
+  const eyeClosed = document.querySelector('.js-eye-open'); 
+  
+  if (passwordInput.type === 'password') {
+    passwordInput.type = 'text'; // password
+    eyeOpen.style.display = 'none'; // hide password
+    eyeClosed.style.display = 'inline';// password visualization
+  } else {
+    passwordInput.type = 'password'; 
+    eyeOpen.style.display = 'inline'; 
+    eyeClosed.style.display = 'none'; 
+  }
+});
+
+document.getElementById('js-sign-up-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  // form fields
+  const firstName = document.getElementById('js-first-name').value.trim();
+  const lastName = document.getElementById('js-last-name').value.trim();
+  const email = document.getElementById('js-email').value.trim();
+  const password = document.getElementById('js-Password').value.trim();
+  const errorMessage = document.getElementById('js-error-message');
+  const successMessage = document.getElementById('js-success-message');
+
+   // Field Verifier 
+   if (!firstName || !lastName || !email || !password) {
+    errorMessage.style.display = 'block'; 
+    successMessage.style.display = 'none'; 
+  } else {
+    errorMessage.style.display = 'none'; 
+    successMessage.style.display = 'block'; 
+  }
+});
