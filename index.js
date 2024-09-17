@@ -41,31 +41,34 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.querySelector('.js-Earnings-right-eye-toggle').addEventListener('click', function () {
-  const passwordInput = document.getElementById('js-Password');
+  const passwordInput = document.querySelector('.js-Password');
   const eyeOpen = document.querySelector('.js-eye-closed'); 
   const eyeClosed = document.querySelector('.js-eye-open'); 
+  const visualization= document.querySelector('.js-Password-open');
   
   if (passwordInput.type === 'password') {
     passwordInput.type = 'text'; // password
     eyeOpen.style.display = 'none'; // hide password
     eyeClosed.style.display = 'inline';// password visualization
+    visualization.textContent = 'password hide';
   } else {
     passwordInput.type = 'password'; 
     eyeOpen.style.display = 'inline'; 
     eyeClosed.style.display = 'none'; 
+    visualization.textContent = 'password visualization';
   }
 });
 
-document.getElementById('js-sign-up-form').addEventListener('submit', function(event) {
+document.querySelector('.js-sign-up-form').addEventListener('submit', function(event) {
   event.preventDefault();
   
   // form fields
-  const firstName = document.getElementById('js-first-name').value.trim();
-  const lastName = document.getElementById('js-last-name').value.trim();
-  const email = document.getElementById('js-email').value.trim();
-  const password = document.getElementById('js-Password').value.trim();
-  const errorMessage = document.getElementById('js-error-message');
-  const successMessage = document.getElementById('js-success-message');
+  const firstName = document.querySelector('.js-first-name').value.trim();
+  const lastName = document.querySelector('.js-last-name').value.trim();
+  const email = document.querySelector('.js-email').value.trim();
+  const password = document.querySelector('.js-Password').value.trim();
+  const errorMessage = document.querySelector('.js-error-message');
+  const successMessage = document.querySelector('.js-success-message');
 
    // Field Verifier 
    if (!firstName || !lastName || !email || !password) {

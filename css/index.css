@@ -191,10 +191,6 @@ body {
   margin: 0px 25px;
 }
 
-.Earnings__right-sign-up{
-  margin: var(--zero);
-}
-
 .Earnings__right-title{
   font-size: var(--thirty-two);
   font-weight: var(--font-weight-bold);
@@ -211,6 +207,7 @@ body {
   color: var(--color-striking-gray);
   margin-left: 0px;
   margin-bottom: 34px;
+  margin-top: var(--zero);    
 }
 
 .Earnings__right-button {
@@ -382,6 +379,18 @@ body {
   padding: 0;
 }
 
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0px;
+  margin: -1;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+
 .Earnings__right-open {
   display: none;
 }
@@ -462,10 +471,6 @@ body {
   .Earnings__right-sign{
     display: none;
 }
-
-  .Earnings__right-sign-up{
-    margin:0px;
-  }
 
   .Earnings__right-title{
     font-size: 36px;
