@@ -60,10 +60,7 @@
   border-radius: var(--eight-pixel);
 }
 
-.Earnings__right-google:hover {
-  background-color: var(--color-solid);
-}
-
+.Earnings__right-google:hover,
 .Earnings__right-apple:hover {
   background-color: var(--color-solid);
 }
@@ -401,7 +398,7 @@
   .Earnings__right-info{
     display: flex;
     justify-content: space-between;
-    padding-top: 179px;
+    padding-top: 215px;
     margin: 0px;
   }
 
