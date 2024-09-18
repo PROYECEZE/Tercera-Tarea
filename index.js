@@ -50,12 +50,12 @@ document.querySelector('.js-Earnings-right-eye-toggle').addEventListener('click'
     passwordInput.type = 'text'; // password
     eyeOpen.style.display = 'none'; // hide password
     eyeClosed.style.display = 'inline';// password visualization
-    visualization.textContent = 'password hide';
+    visualization.textContent = 'password text is hidden';
   } else {
     passwordInput.type = 'password'; 
     eyeOpen.style.display = 'inline'; 
     eyeClosed.style.display = 'none'; 
-    visualization.textContent = 'password visualization';
+    visualization.textContent = 'password text is visible';
   }
 });
 
