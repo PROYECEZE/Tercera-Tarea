@@ -2,6 +2,7 @@
   /* Colors */
   --color-white: #FFFFFF;
   --color-purple: #6941C6;
+  --color-purple-smal:#7F56D9;
   --color-light-gray: #D0D5DD;
   --color-soft-gray: #8C8B8B;
   --color-solid: #959393;
@@ -37,5 +38,37 @@
   --box-shadowx: 0px 1px 2px 0px #1018280D;
   --box-shadowy: 0px 0px 0px 4px rgba(133, 102, 102, 0.1);
   --flex: 1;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  display: flex;
+}
+
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('../fonts/Nexa-Heavy.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NexaRegular';
+  src: url('../fonts/NexaRegular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.login-information__container{
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 32px;
+  display: flex;
+  gap: 38px;
 }
 
