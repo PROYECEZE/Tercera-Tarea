@@ -204,7 +204,7 @@
   align-items: center;
   cursor: pointer;
   color: var(--color-black-medium);
-  background-color: var(--color-white);
+  background-color: #F9FAFB;
   box-shadow: var(--box-shadowx);
   margin: var(--zero);
   font-size: var(--sixteen-pixeles);
