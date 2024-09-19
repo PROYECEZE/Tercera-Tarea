@@ -1,159 +1,4 @@
 
-.Earnings {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .Earnings{
-    flex-basis: 604px;
-    display: block;
-  }
-  
-  .carousel__Earnings{
-    list-style-type: none;
-    padding-left: 0px;
-    margin-top: 0px;
-  }
-  
-  .Earnings__left-side{
-    background-color: var(--color-purple);
-    color: var(--color-white);
-    padding: 30px 59px 75px 24px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .Earnings__found{
-    margin-top: 65px;
-    margin-left: 32px
-  }
-  
-  .Earnings__info{
-    display: flex;
-    background-color: var(--color-white);
-    box-shadow: 0px 3.77px 49.95px 0px #0000001A;
-    border-radius: 19px;
-    max-width: 480px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 32px;
-    margin-top: -23px;
-  }
-  
-  .Earnings__details{
-    margin-left: 40px;
-  }
-  
-  .Earnings__earn{
-    color: var(--color-strong-gray);
-    font-size: var(--font-size-xlarge);
-    line-height: var(--line-heightx-large);
-    font-family: 'Nexa';
-    margin: 0px;
-    margin-top: -20px;
-    padding-bottom: 7px;
-  }
-  
-  .Earnings__total{
-    font-family: 'NexaRegular';
-    font-size: 17px;
-    font-weight: var(--font-weigh);
-    line-height: var(--line-height-small);
-    color: var(--color-soft-gray);
-  }
-  
-  .Earnings__price{
-    font-family: 'Nexa';
-    font-size: var(--font-size-xlarge);
-    line-height: var(--line-heightx-large);
-    color: var(--color-strong-gray);
-    margin: 0px;
-    padding-top: 10px;
-    padding-bottom: 28px;
-  }
-  
-  .Earnings__profit{
-    font-family: 'NexaRegular';
-    font-size: var(--sixteen-pixeles);
-    font-weight: var(--font-weigh);
-    line-height: var(--line-height-small);
-    color: var(--color-soft-gray);
-    margin-top: -4px;
-  }
-  
-  .Earnings__percentage{
-    display: flex;
-  }
-  
-  .Earnings__graf{
-    margin-right: -36px;
-    position: relative;
-  }
-  
-  .Earnings__number{
-    color: var(--color-strong-gray);
-    position: absolute;
-    font-family: 'Nexa';
-    font-size: var(--font-size-xlarge);
-    line-height: var(--line-heightx-large);
-    margin-left: 120px;
-    margin-top: 130px;
-  }
-  
-  .Earnings__decription{
-    font-size: 40px;
-    font-weight: var(--font-weight-bold);
-    line-height: 90px;
-    letter-spacing: var(--letter-spacing-negative);
-    color: var(--color-white);
-    text-align: center;
-    margin: 0px;
-    margin-top: 85px;
-  }
-  
-  .Earnings__text{
-    font-size: var(--sixteen-pixeles);
-    font-weight: var(--font-weigh);
-    line-height: var(--line-heightx-large);
-    color: var(--color-white);
-    text-align: center;
-    margin-left: 7px;
-    margin-top: 5px;
-    padding-bottom: 80px;
-  }
-  
-  .carousel__indicators {
-    display: flex;
-    margin-top: var(--twenty-pixel);
-    position: absolute;
-    margin-top: -100px;
-    margin-left: 230px;
-    gap: var(--twenty-pixel);
-  }
-  
-  .indicator {
-    width: var(--eight-pixel);
-    height: var(--eight-pixel);
-    background-color: #F4EBFF80;
-    opacity: 50%;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-    border: none;
-    padding: var(--zero);
-  }
-  
-  .indicator.active {
-    background-color: var(--color-white);
-    border-radius: 4px;
-    width: 44px;
-    height: 8px;
-    opacity: var(--width);
-    transform: translateX(0);
-    z-index: 1; 
-  }
-}
-
 .Earnings__right-side {
   border-radius: var(--eight-pixel);
   text-align: center;
@@ -204,21 +49,18 @@
   align-items: center;
   cursor: pointer;
   color: var(--color-black-medium);
-  background-color: #F9FAFB;
+  background-color:#F9FAFB;
   box-shadow: var(--box-shadowx);
   margin: var(--zero);
   font-size: var(--sixteen-pixeles);
   font-weight: var(--font-weight-small);
   line-height: var(--line-height-medium);
   border: 1px solid var(--color-light-gray);
-  padding: 8px 35px;
+  padding: 8px 26px;
   border-radius: var(--eight-pixel);
 }
 
-.Earnings__right-google:hover {
-  background-color: var(--color-solid);
-}
-
+.Earnings__right-google:hover,
 .Earnings__right-apple:hover {
   background-color: var(--color-solid);
 }
@@ -243,33 +85,12 @@
 }
 
 .Earnings__right-option{
-  font-size: 14px;
+  font-size: var(--font-size-smalls);
   font-weight: var(--font-weight);
   line-height: var(--line-height-medium);
   text-align: center;
   color: var(--color-striking-gray);
   margin: 0px;
-}
-
-.Earnings__right-names{
-  display: flex;
-  gap: 34px;
-  padding-bottom: 28px;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.Earnings__right-input {
-  font-size: var(--sixteen-pixeles);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height-medium);
-  color: var(--color-striking-gray);
-  background-color: var(--color-white);
-  border: 1px solid var(--color-light-gray);
-  box-shadow: var(--box-shadowx);
-  padding: 10px 14px;
-  border-radius: var(--eight-pixel);
-  flex-grow: 1;
 }
 
 .Earnings__right-group {
@@ -278,7 +99,7 @@
   border: 1px solid var(--color-light-gray);
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: var(--eight-pixel);
-  padding: 10px 14px;
+  padding: 18px 14px;
   background-color: var(--color-white);
   margin-bottom: 28px;
 }
@@ -359,14 +180,70 @@
   border: 0;
 }
 
-
 .Earnings__right-open {
   display: none;
 }
 
-.Earnings__right-contrary{
-  flex-direction: column-reverse;
+.Earnings__right-choose{
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 42px;
+}
+
+.Earnings__right-remember{
+  display: flex;
+  align-items: center;
+}
+
+.Earnings__right-radio {
+  appearance: none;
+  width: var(--twenty-pixel);
+  height: var(--twenty-pixel);
+  border-radius: 50%;
+  border: 1.5px solid #F9F5FF;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+
+.Earnings__right-radio:checked {
+  border-color: var(--color-purple-smal); 
+}
+
+.Earnings__right-radio:checked::before {
+  content: '';
+  display: block;
+  width: var(--eight-pixel);
+  height: var(--eight-pixel);
+  border-radius: 50%;
+  background-color: var(--color-purple-smal); 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Earnings__right-selection {
+  font-size: var(--font-size-smalls);
+  font-weight: 500;
+  line-height: var(--line-height-medium);
+  text-align: left;
+  color: #101828;
+}
+
+.Earnings__right-forgot{
+  font-size: var(--font-size-smalln);
+  font-weight: var(--font-weight);
+  line-height: var(--thirty-two);
+  text-align: center;
+  color: var(--color-purple);
+  text-decoration: none;
+}
+
+.Earnings__right-contrary{
+  display: flex;
+  flex-direction: column;
   margin-bottom: 60px;
   gap: 28px;
 }
@@ -375,17 +252,16 @@
   margin-top: 0px;
   font-size: var(--font-size-small);
   font-weight: var(--font-weight);
-  line-height: 21px;
-  color: var(--color-striking-gray);
-  margin-right: 15px;
-  text-align: left;
+  line-height: var(--thirty-two);
+  color: var(--color-black-small);
+  text-align: center;
 }
 
 .Earnings__privacy-policy{
   color: var(--color-black-small);
   font-size: var(--font-size-small);
-  font-weight: var(--font-weight);
-  line-height: 21px;
+  font-weight: var(--font-weight-small);
+  line-height: var(--thirty-two);
   text-align: left;
   text-decoration: none;
 }
@@ -417,16 +293,6 @@
   display: none;
 }
 
-.Earnings__right-error{
-  display:none;
-}
-
-.Earnings__right-success{
-  color:green;
-  display:none;
-  margin-bottom: 20px;
-}
-
 @media (min-width: 768px) {
   .Earnings__right-side {
     border-radius: var(--eight-pixel);
@@ -449,7 +315,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    gap: 64px;
+    gap: 38px;
     flex-direction: row;
     margin-left: 0px;
     margin-right: 0px;
@@ -457,7 +323,7 @@
 
   .Earnings__right-apple,
   .Earnings__right-google {
-    padding: 12px 35px;
+    padding: 12px 26px;
   }
 
   .Earnings__right-function{
@@ -481,10 +347,26 @@
     flex-grow: 1;
   }
 
+  .Earnings__right-group {
+    padding: 10px 14px;
+  }
+
   .Earnings__right-group--position {
     position: relative;
     margin-bottom: 28px;
     flex-direction: row;
+  }
+
+  .Earnings__right-choose{
+    margin-bottom: var(--zero);
+  }
+
+  .Earnings__right-selection {
+    font-size: 16px;
+  }
+
+  .Earnings__right-forgot{
+    font-size: 18px;
   }
 
   .Earnings__right-contrary{
@@ -495,14 +377,15 @@
   }
   .Earnings__right-policy{
     font-size: var(--sixteen-pixeles);
-    line-height: var(--line-height-large);
+    line-height: var(--thirty-two);
     margin-left: 0px;
     margin-bottom: 0px;
+    margin-top: 38px;
   }
 
   .Earnings__privacy-policy{
     font-size: var(--sixteen-pixeles);
-    line-height: var(--line-height-large);
+    line-height: var(--thirty-two);
   }
 
   .Earnings__right-buttonn{
@@ -514,7 +397,7 @@
   .Earnings__right-info{
     display: flex;
     justify-content: space-between;
-    padding-top: 179px;
+    padding-top: 215px;
     margin: 0px;
   }
 
@@ -527,10 +410,5 @@
     text-align: left;
     margin: 0px;
     color: var(--color-striking-gray);
-  }
-
-  .Earnings__right-success{
-    display: none;
-    margin-bottom: -40px;
   }
 }
